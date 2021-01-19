@@ -4,6 +4,8 @@
 
 ## Build Setup
 
+ブランチ切りました
+
 ``` bash
 # install dependencies
 npm install
