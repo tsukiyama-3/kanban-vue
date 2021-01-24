@@ -82,12 +82,12 @@ describe('KbnLoginView', () => {
           store,
           localVue
         })
-        sinon.spy(localView.vm, 'throwReject') // spyでラップ
+        sinon.spy(loginView.vm, 'throwReject') // spyでラップ
       }),
 
       afterEach(() => {
         loginView.vm.throwReject.restore() // spyのラップ解除
-      })
+      }),
 
       it('エラー処理が呼び出されること', done => {
         // login アクションを失敗とする
